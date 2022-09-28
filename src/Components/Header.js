@@ -7,15 +7,9 @@ export default function Header() {
             <div className="Header">
                 <div className="gameNameContainer">
                     <div className="gameNames">
-                        <div className="gameNameIndividualContainer">
-                            <h1 className="gameNameRock">Rock</h1>
-                        </div>
-                        <div className="gameNameIndividualContainer">
-                            <h1 className="gameNamePaper">Paper</h1>
-                        </div>
-                        <div className="gameNameIndividualContainer">
-                            <h1 className="gameNameScissors">Scissors</h1>
-                        </div>
+                        <h1 className="gameNameRock">Rock</h1>
+                        <h1 className="gameNamePaper">Paper</h1>
+                        <h1 className="gameNameScissors">Scissors</h1>
                     </div>
                     <div className="scoreboard">
                         <div className="scoreName">
