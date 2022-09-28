@@ -1,0 +1,15 @@
+.Header {
+    margin: 0 auto;
+    max-width: 50%;
+    border: 1px solid red;
+}
+
+.gameNameContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.gameNames {
+    line-height: 0.75;
+}
