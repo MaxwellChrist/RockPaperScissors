@@ -15,7 +15,7 @@ export default function Header() {
                         <div className="scoreName">
                             <h3>Score</h3>
                         </div>
-                        <div className="userscore">
+                        <div className="user-score">
                             <h3>0</h3>
                         </div>
                     </div>
