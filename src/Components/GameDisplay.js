@@ -4,7 +4,7 @@ import './GameDisplay.css'
 export default function GameDisplay() {
     return (
         <>
-            <div className="display-container">
+            <div className="display-container-player-pick">
                 <div className="symbol-background rock-background">
                     <div className="rock symbol">
                         <img src="./images/icon-rock.svg" alt="faded lines connecting game icons" />

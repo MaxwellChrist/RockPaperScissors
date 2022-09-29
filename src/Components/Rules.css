@@ -1,0 +1,21 @@
+.rules-btn-container {
+    position: fixed; 
+    bottom: 0; 
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    border: 2px solid var(--Header-Outline);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rules-btn {
+    color: white;
+    background: transparent;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: var(--Semi-Bold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
