@@ -1,7 +1,7 @@
 import './App.css';
-import Header from './Components/Header';
-import GameDisplay from './Components/GameDisplay';
-import Rules from './Components/Rules';
+import Header from './Components/Header/Header';
+import GameDisplay from './Components/GameDisplay/GameDisplay';
+import Rules from './Components/Rules/Rules';
 
 function App() {
   return (

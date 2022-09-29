@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import RulesDisplay from "./RulesDisplay"
+import RulesDisplay from "../RulesDisplay/RulesDisplay"
 import './Rules.css'
 
 class Rules extends Component {

@@ -6,7 +6,7 @@
     align-items: center;
     margin: 0 auto 50px;
     place-content: center;
-    background-image: url("../../public/images/bg-triangle.svg");
+    background-image: url("../../../public/images/bg-triangle.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 80%;
