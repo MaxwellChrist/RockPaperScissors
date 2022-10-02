@@ -16,6 +16,7 @@
    position:fixed;
    background: white;
    width: 30%;
+   min-width: 600px;
    height: auto;
    padding: 10px 50px;
    top:50%;
@@ -59,4 +60,11 @@
    justify-self: center;
    width: 90%;
    height: 90%;
+}
+
+@media screen and (max-width: 700px){
+   .rules-display-container {
+      min-width: 300px;
+      width: 80%;
+   }
 }
