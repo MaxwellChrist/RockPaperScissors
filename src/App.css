@@ -1,7 +1,10 @@
 :root {
-  /* Break points */
-  --Mobile: 375px;
-  --Desktop: 1366px;
+  /* 
+  Break points:
+    Mobile: 375px;
+    Tablet: 700px;
+    Desktop: 1366px; 
+  */
 
   /* Primary Colors */
   --Scissors-Gradient: linear-gradient(90deg, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%);
