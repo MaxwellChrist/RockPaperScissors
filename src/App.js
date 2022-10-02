@@ -43,6 +43,9 @@ function App() {
     let resultsContainer = document.querySelector(".results-container")
     gameContainer.style.display = "none"
     resultsContainer.style.display = "grid"
+    let computerIcon = document.querySelector(".symbol-background")
+    computerIcon.style.height = "300px";
+    computerIcon.style.width = "300px";
     setUserPick(pick)
     runComputerPick()
   }
@@ -55,6 +58,9 @@ function App() {
     let resultsContainer = document.querySelector(".results-container")
     gameContainer.style.display = "grid"
     resultsContainer.style.display = "none"
+    let computerIcon = document.querySelector(".symbol-background")
+    computerIcon.style.height = "200px";
+    computerIcon.style.width = "200px";
   }
   
   return (
