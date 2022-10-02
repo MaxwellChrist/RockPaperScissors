@@ -1,7 +1,7 @@
 import React from "react";
 import './Header.css'
 
-export default function Header() {
+export default function Header(props) {
     return (
         <>
             <div className="Header">
@@ -16,7 +16,7 @@ export default function Header() {
                             <h3>Score</h3>
                         </div>
                         <div className="user-score">
-                            <h3>0</h3>
+                            <h3>{props.points}</h3>
                         </div>
                     </div>
                 </div>

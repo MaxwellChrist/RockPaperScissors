@@ -8,14 +8,24 @@ import ResultsDisplay from './Components/ResultsDisplay/ResultsDisplay'
 function App() {
   let [userPick, setUserPick] = useState("")
   let [computerPick, setComputerPick] = useState("")
-  // let [points, setPoints] = useState(0)
-  // let [turnResult, setTurnResult] = useState(0)
-  // let [result, setResult] = useState("lets see who wins")
-  // let [gameOver, setGameOver] = useState(false)
+  let [points, setPoints] = useState(0)
+  let [result, setResult] = useState("lets see who wins")
 
-  // useEffect(() => {
-  //   runComputerPick()
-  // }, [userPick])
+  useEffect(() => {
+    if (
+      (userPick === "paper" && computerPick === "rock") || 
+      (userPick === "scissors" && computerPick === "paper") || 
+      (userPick === "rock" && computerPick === "scissors")) {
+      setResult("You Win")
+    } else if (
+      (computerPick === "paper" && userPick === "rock") || 
+      (computerPick === "scissors" && userPick === "paper") || 
+      (computerPick === "rock" && userPick === "scissors")) {
+      setResult("You Lose")
+    } else {
+      setResult("Draw")
+    }
+  }, [computerPick, userPick])
 
   function runComputerPick() {
     let decider = Math.floor(Math.random() * 3)
@@ -36,14 +46,22 @@ function App() {
     setUserPick(pick)
     runComputerPick()
   }
-  console.log("the users pick is " + userPick)
-  console.log("the computer pick is " + computerPick)
+
+  function resetPicks() {
+    setUserPick("")
+    setComputerPick("")
+    setResult("lets see who wins")
+    let gameContainer = document.querySelector(".display-container")
+    let resultsContainer = document.querySelector(".results-container")
+    gameContainer.style.display = "grid"
+    resultsContainer.style.display = "none"
+  }
   
   return (
     <div className="App">
-      <Header />
+      <Header points={points}/>
       <GameDisplay runUserPick={runUserPick} />
-      <ResultsDisplay userPick={userPick} computerPick={computerPick} />
+      <ResultsDisplay resetPicks={resetPicks} points={points} setPoints={setPoints} result={result} userPick={userPick} computerPick={computerPick} />
       <Rules />
     </div>
   );

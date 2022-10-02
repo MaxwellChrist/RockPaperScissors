@@ -1,12 +1,11 @@
 .results-container {
     display: none;
     grid-template-rows: 100px 1fr;
-    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     margin: 0 auto 50px;
     place-content: center;
-    background-color: orange;
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 80%;
@@ -49,4 +48,28 @@
 .computer-picked-heading {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
+}
+
+.results-display-and-button {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.results-display-and-button h1{
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.results-display-and-button button{
+    font-size: 1rem;
+    background: white;
+    color: var(--Header-Outline);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 5px;
+    border: transparent;
 }
