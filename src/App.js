@@ -49,7 +49,6 @@ function App() {
     } else {
       setComputerPick("scissors")
     }
-    console.log(decider)
   }
 
   function runUserPick(pick) {
