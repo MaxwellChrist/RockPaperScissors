@@ -17,11 +17,23 @@ function App() {
       (userPick === "scissors" && computerPick === "paper") || 
       (userPick === "rock" && computerPick === "scissors")) {
       setResult("You Win")
+      let winnerOuter = document.querySelector(".user-pick-outer")
+      winnerOuter.style.backgroundColor = "rgba(255, 255, 255, 0.02)"
+      let winnerMiddle = document.querySelector(".user-pick-middle")
+      winnerMiddle.style.backgroundColor = "rgba(255, 255, 255, 0.02)"
+      let winnerInner = document.querySelector(".user-pick-inner")
+      winnerInner.style.backgroundColor = "rgba(255, 255, 255, 0.02)"
     } else if (
       (computerPick === "paper" && userPick === "rock") || 
       (computerPick === "scissors" && userPick === "paper") || 
       (computerPick === "rock" && userPick === "scissors")) {
       setResult("You Lose")
+      let winnerOuter = document.querySelector(".computer-pick-outer")
+      winnerOuter.style.backgroundColor = "rgba(255, 255, 255, 0.02)"
+      let winnerMiddle = document.querySelector(".computer-pick-middle")
+      winnerMiddle.style.backgroundColor = "rgba(255, 255, 255, 0.02)"
+      let winnerInner = document.querySelector(".computer-pick-inner")
+      winnerInner.style.backgroundColor = "rgba(255, 255, 255, 0.02)"
     } else {
       setResult("Draw")
     }
@@ -57,6 +69,18 @@ function App() {
     setUserPick("")
     setComputerPick("")
     setResult("lets see who wins")
+    let winnerOuter = document.querySelector(".user-pick-outer")
+    winnerOuter.style.backgroundColor = "transparent"
+    let winnerMiddle = document.querySelector(".user-pick-middle")
+    winnerMiddle.style.backgroundColor = "transparent"
+    let winnerInner = document.querySelector(".user-pick-inner")
+    winnerInner.style.backgroundColor = "transparent"
+    let winnerOuter2 = document.querySelector(".computer-pick-outer")
+    winnerOuter2.style.backgroundColor = "transparent"
+    let winnerMiddle2 = document.querySelector(".computer-pick-middle")
+    winnerMiddle2.style.backgroundColor = "transparent"
+    let winnerInner2 = document.querySelector(".computer-pick-inner")
+    winnerInner2.style.backgroundColor = "transparent"
   }
   
   return (

@@ -24,9 +24,9 @@ export default function ResultsDisplay(props) {
           <button onClick={reset}>Play again</button>
         </div>
         <div className="user-pick-result">
-          <div className="winner-outer">
-            <div className="winner-middle">
-              <div className="winner-inner">
+          <div className="user-pick-outer outer">
+            <div className="user-pick-middle middle">
+              <div className="user-pick-inner inner">
                 {props.userPick === "rock" && <Rock />}
                 {props.userPick === "paper" && <Paper />}
                 {props.userPick === "scissors" && <Scissors />}
@@ -35,9 +35,9 @@ export default function ResultsDisplay(props) {
           </div>
         </div>
         <div className="computer-pick-result">
-          <div className="winner-outer">
-            <div className="winner-middle">
-              <div className="winner-inner">
+          <div className="computer-pick-outer outer">
+            <div className="computer-pick-middle middle">
+              <div className="computer-pick-inner inner">
                 {props.computerPick === "rock" && <Rock />}
                 {props.computerPick === "paper" && <Paper />}
                 {props.computerPick === "scissors" && <Scissors />}

@@ -68,7 +68,7 @@
     border: transparent;
 }
 
-.winner-outer, .winner-inner, .winner-middle {
+.outer, .inner, .middle {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -77,29 +77,38 @@
 }
 
 .winner-outer {
-    width: 600px;
-    height: 600px;
     background-color:  rgba(255, 255, 255, 0.02);
 }
 
 .winner-middle {
-    width: 600px;
-    height: 600px;
     background-color: rgba(255, 255, 255, 0.04);
 }
 
 .winner-inner {
-    width: 450px;
-    height: 450px;
     background-color:  rgba(255, 255, 255, 0.06);
 }
 
-.winner-inner div {
+.outer {
+    width: 600px;
+    height: 600px;
+}
+
+.middle {
+    width: 500px;
+    height: 500px;
+}
+
+.inner {
+    width: 400px;
+    height: 400px;
+}
+
+.inner div {
     width: 300px;
     height: 300px;
 }
 
-.winner-inner div div{
+.inner div div{
     display: grid;
     justify-items: center;
     align-items: center;
@@ -111,7 +120,7 @@
     
 }
 
-.winner-inner div div img{
+.inner div div img{
     height: 45%;
     width: 45%;
 }
