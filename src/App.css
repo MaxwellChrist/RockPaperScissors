@@ -47,3 +47,8 @@
 #hide {
   display: none;
 }
+
+#selected {
+  height: 300px;
+  width: 300px;
+}

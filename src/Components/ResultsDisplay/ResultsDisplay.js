@@ -5,6 +5,7 @@ import Paper from "../Paper/Paper";
 import Scissors from "../Scissors/Scissors";
 
 export default function ResultsDisplay(props) {
+
   function reset() {
     if (props.result === "You Win") {
       props.setPoints(props.points + 1);

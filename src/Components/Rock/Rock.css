@@ -2,13 +2,13 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .rock-background {
+    width: 200px;
+    height: 200px;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     background: var(--Rock-Gradient);
@@ -46,3 +46,4 @@
         width: 70%;
     }
 }
+

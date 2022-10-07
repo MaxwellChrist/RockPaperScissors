@@ -27,6 +27,7 @@ function App() {
     }
   }, [computerPick, userPick])
 
+
   function runComputerPick() {
     let decider = Math.floor(Math.random() * 3)
     if (decider === 0) {
@@ -36,6 +37,7 @@ function App() {
     } else {
       setComputerPick("scissors")
     }
+    console.log(decider)
   }
 
   function runUserPick(pick) {
@@ -43,24 +45,18 @@ function App() {
     let resultsContainer = document.querySelector(".results-container")
     gameContainer.style.display = "none"
     resultsContainer.style.display = "grid"
-    let computerIcon = document.querySelector(".symbol-background")
-    computerIcon.style.height = "300px";
-    computerIcon.style.width = "300px";
     setUserPick(pick)
     runComputerPick()
   }
 
   function resetPicks() {
-    setUserPick("")
-    setComputerPick("")
-    setResult("lets see who wins")
     let gameContainer = document.querySelector(".display-container")
     let resultsContainer = document.querySelector(".results-container")
     gameContainer.style.display = "grid"
     resultsContainer.style.display = "none"
-    let computerIcon = document.querySelector(".symbol-background")
-    computerIcon.style.height = "200px";
-    computerIcon.style.width = "200px";
+    setUserPick("")
+    setComputerPick("")
+    setResult("lets see who wins")
   }
   
   return (
