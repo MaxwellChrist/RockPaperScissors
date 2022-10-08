@@ -65,21 +65,24 @@ function App() {
     let resultsContainer = document.querySelector(".results-container")
     gameContainer.style.display = "grid"
     resultsContainer.style.display = "none"
+    if (result === "You Win") {
+      let winnerOuter = document.querySelector(".user-pick-outer")
+      winnerOuter.style.backgroundColor = "transparent"
+      let winnerMiddle = document.querySelector(".user-pick-middle")
+      winnerMiddle.style.backgroundColor = "transparent"
+      let winnerInner = document.querySelector(".user-pick-inner")
+      winnerInner.style.backgroundColor = "transparent"
+    } else if (result === "You Lose") {
+      let winnerOuter2 = document.querySelector(".computer-pick-outer")
+      winnerOuter2.style.backgroundColor = "transparent"
+      let winnerMiddle2 = document.querySelector(".computer-pick-middle")
+      winnerMiddle2.style.backgroundColor = "transparent"
+      let winnerInner2 = document.querySelector(".computer-pick-inner")
+      winnerInner2.style.backgroundColor = "transparent"
+    }
     setUserPick("")
     setComputerPick("")
     setResult("lets see who wins")
-    let winnerOuter = document.querySelector(".user-pick-outer")
-    winnerOuter.style.backgroundColor = "transparent"
-    let winnerMiddle = document.querySelector(".user-pick-middle")
-    winnerMiddle.style.backgroundColor = "transparent"
-    let winnerInner = document.querySelector(".user-pick-inner")
-    winnerInner.style.backgroundColor = "transparent"
-    let winnerOuter2 = document.querySelector(".computer-pick-outer")
-    winnerOuter2.style.backgroundColor = "transparent"
-    let winnerMiddle2 = document.querySelector(".computer-pick-middle")
-    winnerMiddle2.style.backgroundColor = "transparent"
-    let winnerInner2 = document.querySelector(".computer-pick-inner")
-    winnerInner2.style.backgroundColor = "transparent"
   }
   
   return (
