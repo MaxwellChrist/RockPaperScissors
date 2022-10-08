@@ -54,8 +54,8 @@ function App() {
   function runUserPick(pick) {
     let gameContainer = document.querySelector(".display-container")
     let resultsContainer = document.querySelector(".results-container")
-    gameContainer.style.display = "none"
-    resultsContainer.style.display = "grid"
+    gameContainer.setAttribute("id", "hide")
+    resultsContainer.removeAttribute("id", "hide")
     setUserPick(pick)
     runComputerPick()
   }
@@ -63,8 +63,8 @@ function App() {
   function resetPicks() {
     let gameContainer = document.querySelector(".display-container")
     let resultsContainer = document.querySelector(".results-container")
-    gameContainer.style.display = "grid"
-    resultsContainer.style.display = "none"
+    gameContainer.removeAttribute("id", "hide")
+    resultsContainer.setAttribute("id", "hide")
     if (result === "You Win") {
       let winnerOuter = document.querySelector(".user-pick-outer")
       winnerOuter.style.backgroundColor = "transparent"

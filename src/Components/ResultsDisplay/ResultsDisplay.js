@@ -14,7 +14,7 @@ export default function ResultsDisplay(props) {
   }
   return (
     <>
-      <div className="results-container">
+      <div id="hide" className="results-container">
         <h1 className="results-heading user-picked-heading">You Picked</h1>
         <h1 className="results-heading computer-picked-heading">
           The house Picked
