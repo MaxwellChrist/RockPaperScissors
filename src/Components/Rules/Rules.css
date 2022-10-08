@@ -26,7 +26,8 @@
 
 @media screen and (max-width: 700px){
     .rules-btn-container {
-        right: Calc(50% - 96px);
+        right: Calc(50% - 96px / 2);
         margin-bottom: 50px;
     }
+
 }
