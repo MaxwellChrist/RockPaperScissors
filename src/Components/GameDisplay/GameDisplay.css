@@ -16,7 +16,11 @@
 
 @media screen and (max-width: 700px){
     .display-container  {
-        width: 80%;
-        background-size: auto 50%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 450px;
+        height: 450px;
+        background-size: auto 40%;
+        gap: 10%;
     }
 }

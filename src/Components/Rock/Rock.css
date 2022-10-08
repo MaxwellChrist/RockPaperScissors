@@ -32,18 +32,10 @@
 }
 
 @media screen and (max-width: 700px){
-    .display-container  {
-        width: 80%;
-        background-size: auto 50%;
-    }
-    .symbol-background {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        border-radius: 50%;
-        background-color: white;
-        height: 70%;
-        width: 70%;
+    .rock-background {
+        height: 150px;
+        width: 150px;
+        align-self: center;
     }
 }
 
