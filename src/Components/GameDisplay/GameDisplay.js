@@ -8,9 +8,9 @@ export default function GameDisplay(props) {
     return (
         <>
             <div className="display-container">
-                <Rock runUserPick={props.runUserPick} />
                 <Paper runUserPick={props.runUserPick} />
                 <Scissors runUserPick={props.runUserPick} />
+                <Rock runUserPick={props.runUserPick} />
             </div>
         </>
     )
