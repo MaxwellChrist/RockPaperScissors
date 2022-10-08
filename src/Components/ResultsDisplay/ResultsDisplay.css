@@ -12,11 +12,11 @@
     width: 1366px;
     height: 600px;
 }
-
-
 .user-pick-result{
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    justify-items: center;
+    align-items: center;
     display: grid;
 }
 
@@ -73,7 +73,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    border-radius: 50%;;
+    border-radius: 50%;
 }
 
 .outer {
@@ -112,3 +112,129 @@
     height: 45%;
     width: 45%;
 }
+
+@media screen and (max-width: 1366px){
+    .results-container {
+        width: 100%;
+        grid-template-columns: 1fr 150px 1fr;
+    }
+    .outer {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .middle {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .inner {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .inner div {
+        width: 200px;
+        height: 200px;
+    }
+    .results-display-and-button button{
+        font-size: 0.8rem;
+        width: 150px;
+    }
+    .results-display-and-button h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .results-container {
+        grid-template-columns: 1fr 100px 1fr;
+    }
+    .outer {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .middle {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .inner {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .inner div {
+        width: 150px;
+        height: 150px;
+    }
+    .results-display-and-button button{
+        font-size: 0.6rem;
+        width: 100px;
+    }
+    .results-display-and-button h1{
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .results-container {
+        grid-template-rows: 1fr 100px 300px;
+        grid-template-columns: 1fr 200px 1fr;
+        height: 600px;
+    }
+    .user-pick-result{
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+    .computer-pick-result {
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+    }
+    .user-picked-heading{
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        margin-top: -200px;
+    }
+    .computer-picked-heading {
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+        margin-top: -200px;
+    }
+    .results-heading {
+        font-size: 1.2rem;
+    }
+    .results-display-and-button {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+    }
+    .outer {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .middle {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .inner {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .inner div {
+        width: 150px;
+        height: 150px;
+        align-self: center;
+    }
+    .results-display-and-button button{
+        font-size: 0.6rem;
+        width: 100px;
+    }
+    .results-display-and-button h1{
+        font-size: 1.75rem;
+    }
+}
+
